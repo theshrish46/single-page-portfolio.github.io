@@ -1,6 +1,10 @@
-*,
-*::before,
-*::after {
+@import url('https://fonts.google.com/specimen/Epilogue');
+
+$pri-ff: 'Epilogue';
+$Medium-Gray: hsl(0, 0%, 41%);
+$Almost-Black: hsl(0, 0%, 8%);
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,19 +14,99 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    height: 100vh;
+    width: 100%;
 }
+main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    header {
+        margin: 1.5rem 0rem;
+        padding: 0rem 1.5rem;
+        height: 3rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
-h1 {
-    color: red;
+        .logo {
+            img {
+                height: 2rem;
+                width: 6rem;
+            }
+        }
+        .open {
+            border: none;
+            background: transparent;
+            img {
+                height: 1.75rem;
+                width: 2.5rem;
+            }
+        }
 
-    &:hover {
-        color: blue;
     }
 }
 
+.menu {
+    display: none;
+}
 
-@media(max-width: 480px) {
-    h1 {
-        background-color: greenyellow;
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    .intro-img {
+        height: 40%;
+        width: 100%;
+        margin: 1rem 0rem;
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    h3 {
+        margin: 1rem;
+        font-size: 2rem;
+        text-align: center;
+        font-family: monospace;
+    }
+    p {
+        margin: 1rem;
+        font-size: 1.15rem;
+        line-height: 30px;
+        text-align: center;
+        font-family: cursive;
+    }
+    button {
+        width: 40%;
+        margin: 1rem auto;
+        background: $Almost-Black;
+        padding: 10px;
+        color: white;
+        border-radius: 10px;
+        font-family: cursive;
+        font-size: 1.1rem;
+    }
+}
+
+.parteners {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    img {
+        height: 2rem;
+        width: 4rem;
     }
 }
