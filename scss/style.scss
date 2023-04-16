@@ -99,6 +99,7 @@ main {
 }
 
 .parteners {
+    margin: 1rem auto;
     height: 100%;
     width: 100%;
     display: flex;
@@ -109,4 +110,83 @@ main {
         height: 2rem;
         width: 4rem;
     }
+}
+
+@media(min-width: 780px) {
+    main {
+        header {
+            margin: 2.5rem 0rem;
+            margin-bottom: 0.5rem;
+            padding: 0rem 1.75rem;
+    
+            .logo {
+                img {
+                    height: 3rem;
+                    width: 8rem;
+                }
+            }
+            .open {
+                img {
+                    height: 1.9rem;
+                    width: 2.9rem;
+                }
+            }
+    
+        }
+    }
+    
+    .menu {
+        display: none;
+    }
+    
+    .intro {
+        .intro-img {
+            height: 70%;
+            width: 100%;
+            margin: 1rem 0rem;
+    
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+    
+        h3 {
+            margin: 1rem;
+            font-size: 2rem;
+            text-align: center;
+            font-family: monospace;
+        }
+        p {
+            margin: 1rem;
+            font-size: 1.15rem;
+            line-height: 30px;
+            text-align: center;
+            font-family: cursive;
+        }
+        button {
+            width: 40%;
+            margin: 1rem auto;
+            background: $Almost-Black;
+            padding: 10px;
+            color: white;
+            border-radius: 10px;
+            font-family: cursive;
+            font-size: 1.1rem;
+        }
+    }
+    
+    .parteners {
+        margin: 1rem auto;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    
+        img {
+            height: 2rem;
+            width: 4rem;
+        }
+    }   
 }

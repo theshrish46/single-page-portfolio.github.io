@@ -89,6 +89,7 @@ main header .open img {
 }
 
 .parteners {
+  margin: 1rem auto;
   height: 100%;
   width: 100%;
   display: flex;
@@ -98,4 +99,67 @@ main header .open img {
 .parteners img {
   height: 2rem;
   width: 4rem;
+}
+
+@media (min-width: 780px) {
+  main header {
+    margin: 2.5rem 0rem;
+    margin-bottom: 0.5rem;
+    padding: 0rem 1.75rem;
+  }
+  main header .logo img {
+    height: 3rem;
+    width: 8rem;
+  }
+  main header .open img {
+    height: 1.9rem;
+    width: 2.9rem;
+  }
+  .menu {
+    display: none;
+  }
+  .intro .intro-img {
+    height: 70%;
+    width: 100%;
+    margin: 1rem 0rem;
+  }
+  .intro .intro-img img {
+    height: 100%;
+    width: 100%;
+  }
+  .intro h3 {
+    margin: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    font-family: monospace;
+  }
+  .intro p {
+    margin: 1rem;
+    font-size: 1.15rem;
+    line-height: 30px;
+    text-align: center;
+    font-family: cursive;
+  }
+  .intro button {
+    width: 40%;
+    margin: 1rem auto;
+    background: hsl(0, 0%, 8%);
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    font-family: cursive;
+    font-size: 1.1rem;
+  }
+  .parteners {
+    margin: 1rem auto;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .parteners img {
+    height: 2rem;
+    width: 4rem;
+  }
 }/*# sourceMappingURL=style.css.map */
